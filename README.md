@@ -13,7 +13,7 @@ The Courses Platform is an educational web application currently under developme
  - Frontend : React.js
 
 
- Demo: https://electronic-store-sable.vercel.app/#/home
+ Demo: https://coursaty-ashy.vercel.app/#/home
  
 
 ![Image](https://res.cloudinary.com/decau6fvv/image/upload/v1729436190/coursaty_lvpy1q.png)
