@@ -1,0 +1,122 @@
+/* Header */
+header.events {
+    height: 50vh;
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)),
+        url('../assets/images/about/header.jpg') center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+header.events ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header.events ul li a.active {
+    color: var(--main-color);
+}
+
+
+/* Section */
+
+.event-section {
+    padding: 100px 0;
+}
+
+.event-section .event-item {
+    overflow: hidden;
+
+}
+
+.event-section .event-item img {
+    transition: all 1s;
+}
+
+.event-section .event-item:hover img {
+    transform: scale(1.1);
+}
+
+.event-section .event-item .event-text {}
+
+.event-section .event-item:hover .event-text {
+    transform: translateY(-40px);
+
+}
+
+.event-section .event-item .event-text {
+    padding: 15px;
+    text-align: center;
+    transition: all 1s;
+    color: var(--text-dark);
+    transform: translateY(-30px);
+
+}
+
+.event-section .event-item .event-text:hover .content::after,
+.event-section .event-item .event-text:hover .content::before {
+    color: #fff;
+    background-color: #001e57;
+}
+
+.event-section .event-item .event-text .active::after,
+.event-section .event-item .event-text .active::before {
+    color: #fff;
+    background-color: #001e57 !important;
+}
+
+.event-section .event-item .event-text .content {
+    position: relative;
+}
+
+.event-section .event-item .event-text .content h6 {
+    padding: 15px 0;
+    font-weight: 700;
+    position: relative;
+}
+
+.event-section .event-item .event-text .content h6::after {
+    left: 42%;
+    bottom: 0;
+    width: 14%;
+    content: "";
+    height: 1px;
+    position: absolute;
+    background-color: #e11739;
+}
+
+.event-section .event-item .event-text .content p {
+    margin-top: 30px;
+    color: #777;
+}
+
+.event-section .event-item .event-text .content::after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #e11739;
+}
+
+.event-section .event-item .event-text .content::before {
+    left: 41%;
+    bottom: 0;
+    z-index: 1;
+    width: 40px;
+    content: ">";
+    height: 40px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    transition: all 1s ease;
+    justify-content: center;
+    background-color: var(--background-section);
+    transform: translate(0, 15px);
+}

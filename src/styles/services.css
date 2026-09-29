@@ -1,0 +1,122 @@
+header.services {
+    height: 50vh;
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)),
+        url('../assets/images/about/header.jpg') center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+
+}
+
+header.services ul li a {
+    color: var(--text-black);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header.services ul li a.active {
+    color: var(--main-color);
+}
+
+
+.services {
+    padding: 100px 0 60px 0;
+
+}
+
+.services h3 {
+    color: var(--text-black);
+}
+
+.services .section-title p:first-of-type {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.service-item {
+    /* border-top: 1px solid #eee; */
+    /* border-right: 1px solid #eee; */
+    transition: 0.3s;
+    position: relative;
+    z-index: 10;
+}
+
+.service-item .colored-box {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    border-radius: 8px;
+    color: var(--main-color);
+    background-color: #03a9f433;
+}
+
+.service-item .service-title {
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.service-item .service-description {
+    color: var(--gray);
+}
+
+.service-item a:hover .service-title {
+    color: var(--main-color);
+}
+
+.service-item a:hover .service-description {
+    color: var(--text-black);
+}
+
+.service-item .block {
+    padding: 35px 39px;
+}
+
+.service-item:nth-child(even) .colored-box {
+    color: var(--secondary-color);
+    background-color: #673ab742;
+}
+
+.service-item:hover {
+    border-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media (min-width: 991px) {
+
+    .service-item:nth-child(2),
+    .service-item:nth-child(4) {
+        /* border-left: 1px solid #eee; */
+    }
+
+    .service-item:nth-child(4),
+    .service-item:nth-child(5),
+    .service-item:nth-child(6) {
+        /* border-bottom: 1px solid #eee; */
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .service-item:nth-child(2),
+    .service-item:nth-child(3),
+    .service-item:nth-child(5) {
+        /* border-left: 1px solid #eee; */
+    }
+
+    .service-item:nth-child(5),
+    .service-item:nth-child(6) {
+        /* border-bottom: 1px solid #eee; */
+    }
+}
+
+@media (max-width: 991px) {
+
+    .service-item {
+        /* border: 1px solid #eee; */
+        border-bottom: 0;
+    }
+}

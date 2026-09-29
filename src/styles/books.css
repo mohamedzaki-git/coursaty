@@ -1,0 +1,106 @@
+header.books {
+    height: 50vh;
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)),
+        url('../assets/images/about/header.jpg') center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+header.books ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header.books ul li a.active {
+    color: var(--main-color);
+}
+
+/* Books section */
+
+.book {
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    color: var(--text-dark);
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+.book img {
+    transition: all 0.3s ease;
+
+}
+
+.book:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+
+}
+
+.book button {
+    width: 100%;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: var(--main-color);
+
+}
+
+.book button:hover {
+
+    transition: all 0.3s ease;
+    background-color: var(--dark-main-color);
+
+}
+
+/* Book Details */
+.book-details {
+    padding: 100px 0;
+    color: var(--text-dark);
+}
+
+.book-details button {
+    width: 50%;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: var(--main-color);
+
+}
+
+.book-details button:hover {
+
+    transition: all 0.3s ease;
+    background-color: var(--dark-main-color);
+
+}
+
+.book-details p.fw-bold {
+    color: var(--main-color);
+}
+
+.book-details p.fs-5 {
+    color: var(--text-black)
+}
+
+
+
+@media (max-width:767px) {
+    .book-details img {
+        width: 70% !important;
+        display: block;
+        margin: 5px auto;
+    }
+
+    .book-details button {
+        margin: 0 auto;
+        display: block;
+    }
+}

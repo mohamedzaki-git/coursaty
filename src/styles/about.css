@@ -1,0 +1,269 @@
+header.about {
+    height: 50vh;
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)),
+        url('../assets/images/about/header.jpg') center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+header.about ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header.about ul li a.active {
+    color: var(--main-color);
+}
+
+
+.about-us {
+    background-color: var(--background-section);
+}
+
+.about-us h2,
+.about-us h3,
+.about-us h6 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--dark-main-color) !important;
+}
+
+
+.about-us a {
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 800;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-us a:hover {
+    background-color: var(--dark-main-color);
+    color: #fff;
+}
+
+.about-us .bg-img {
+    background-color: var(--gray);
+}
+
+.about-us p {
+    font-size: 22px;
+    line-height: 2;
+    font-weight: 600;
+    color: var(--text-dark);
+
+}
+
+.about-us ul {
+    padding: 10px;
+    list-style-type: square;
+}
+
+.about-us ul li {
+    font-size: 22px;
+    line-height: 2;
+    color: var(--text-dark);
+
+}
+
+/* تنسيقات الأشكال */
+.has-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.shape:first-of-type {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #ccc;
+}
+
+.shape:last-of-type {
+    display: none;
+}
+
+.logo-section {
+    position: absolute;
+    width: 100px;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border-radius: 6px 6px 0 0;
+    transform: translateY(-100%) translateX(30%);
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+.logo-section img {
+    width: 60px !important;
+}
+
+
+
+/* Animation for image 1 */
+@keyframes moveImage1 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    25% {
+        transform: translateY(-10px) translateX(10px);
+    }
+
+    50% {
+        transform: translateY(10px) translateX(-10px);
+    }
+
+    75% {
+        transform: translateY(-10px) translateX(-10px);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+/* Animation for image 2 */
+@keyframes moveImage2 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    25% {
+        transform: translateY(10px) translateX(-10px);
+    }
+
+    50% {
+        transform: translateY(-10px) translateX(10px);
+    }
+
+    75% {
+        transform: translateY(10px) translateX(10px);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+/* Animation for image 3 */
+@keyframes moveImage3 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    25% {
+        transform: translateY(-5px) translateX(-15px);
+    }
+
+    50% {
+        transform: translateY(15px) translateX(10px);
+    }
+
+    75% {
+        transform: translateY(-5px) translateX(15px);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+}
+
+.img-1 {
+    animation: moveImage1 5s infinite;
+    top: 0;
+    left: 0;
+}
+
+.img-2 {
+    animation: moveImage2 5s infinite;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.img-3 {
+    animation: moveImage3 5s infinite;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+/* =============== Why us ===============  */
+.why-us {
+    padding: 100px 0;
+}
+
+.why-us .section-title {
+    margin-bottom: 30px;
+}
+
+
+.why-us .section-title p {
+    color: var(--text-dark);
+    font-size: 22px;
+}
+
+.why-us .section-title h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+
+
+}
+
+/* difference-of-us-item style */
+.difference-of-us-item {
+    position: relative;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.difference-of-us-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.difference-of-us-item .icon {
+    height: 85px;
+    width: 85px;
+    line-height: 85px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgba(0, 123, 255, 0.1);
+    color: var(--main-color);
+}
+
+.difference-of-us-item:nth-child(even) .icon {
+    background-color: rgba(131, 138, 162, 0.1);
+    color: var(--dark-main-color);
+}
+
+.difference-of-us-item .block {
+    padding-right: 10px;
+}
+
+.difference-of-us-item .block h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+
+}
+
+.difference-of-us-item .block p {
+    margin-bottom: 0;
+    color: var(--text-dark);
+
+}

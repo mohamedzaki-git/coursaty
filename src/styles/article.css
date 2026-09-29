@@ -1,0 +1,39 @@
+header.about {
+    height: 50vh;
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)),
+        url('../assets/images/about/header.jpg') center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+header.about ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header.about ul li a.active {
+    color: var(--main-color);
+}
+
+
+/* Articles */
+
+.artical {
+    box-shadow: var(--shadow);
+}
+
+.artical h5 {
+    color: var(--text-dark);
+}
+
+.artical p {
+    color: var(--text-dark);
+    opacity: 0.5;
+}
+
+.artical img {
+    width: 100px !important;
+}

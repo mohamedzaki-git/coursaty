@@ -1,0 +1,150 @@
+header.course-details {
+    height: 50vh;
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)),
+        url('../assets/images/courses/header-course-details.jpg') center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+
+.course-bg {
+    background-color: #dddddd4a;
+    padding: 60px 0 0 0;
+}
+
+
+.course-info-details h6 {
+    color: var(--main-color) !important;
+}
+
+
+
+.social-icons a {
+    margin: 0 5px;
+
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #efebeb;
+    border-radius: 8px;
+}
+
+.table-responsive {
+    margin-top: 15px;
+}
+
+.table-bordered {}
+
+.lesson-section {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.lesson-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.lesson-title {
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.lesson-title i {
+    margin-right: 8px;
+    color: var(--main-color);
+}
+
+.lesson-time {
+    color: #888;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.lesson-time i {
+    margin-right: 5px;
+    color: var(--main-color);
+}
+
+.description {
+    color: #fff;
+    background-color: #000;
+}
+
+.description h4 {
+    font-weight: bold;
+}
+
+.tab-content {
+    background-color: #000;
+    border: none;
+    border-top: 1px solid #fff;
+}
+
+ul.taps {
+    border: none;
+}
+
+ul.taps button {
+    margin: 0 3px;
+    color: var(--main-color) !important;
+}
+
+ul.taps button.active {
+    color: #fff !important;
+    font-weight: bold;
+    background-color: var(--main-color) !important;
+}
+
+.title-lessons {
+    color: var(--main-color);
+    margin: 10px 3px;
+}
+
+
+.about-course {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.about-course button {
+    width: 100%;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: var(--main-color);
+
+}
+
+.about-course i {
+    margin-left: 5px;
+}

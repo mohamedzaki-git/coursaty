@@ -1,0 +1,145 @@
+my-vite-app/
+│
+├── public/                   # الملفات الثابتة التي تُنسخ إلى مجلد البناء
+│   ├── favicon.ico           # أيقونة الموقع
+│   └── index.html            # ملف HTML الرئيسي
+│
+├── src/                      # كود المصدر للتطبيق
+│   ├── assets/               # الصور والخطوط والملفات الثابتة الأخرى
+│   │   ├── logo.png          # شعار التطبيق
+│   │   └── fonts/            # مجلد لتخزين الخطوط
+│   │       └── cairo.woff2   # ملف خط Cairo
+│   ├── components/           # مكونات React القابلة لإعادة الاستخدام
+│   │   ├── Button.jsx        # مكون زر قابل لإعادة الاستخدام
+│   │   └── Navbar.jsx        # مكون شريط التنقل
+│   ├── context/              # ملفات السياق (Context) لـ React
+│   │   └── ThemeContext.jsx  # سياق لإدارة الثيم
+│   ├── hooks/                # Hooks مخصصة لـ React
+│   │   ├── useFetch.jsx      # Hook مخصص لجلب البيانات
+│   │   └── useForm.jsx       # Hook مخصص لإدارة النماذج
+│   ├── pages/                # مكونات React التي تمثل الصفحات/المسارات
+│   │   ├── HomePage.jsx      # مكون صفحة البداية
+│   │   └── AboutPage.jsx     # مكون صفحة "حول"
+│   ├── services/             # ملفات الخدمة التي تتعامل مع البيانات
+│   │   └── apiService.js     # خدمة للتعامل مع استدعاءات API
+│   ├── styles/               # أنماط عالمية وملفات ثيم
+│   │   ├── global.css        # أنماط عالمية تطبق على جميع الصفحات
+│   │   └── theme.scss        # أنماط ثيم خاصة بالتطبيق
+│   ├── utils/                # دوال المساعدة والأدوات
+│   │   ├── formatDate.js     # دالة لتنسيق التواريخ
+│   │   └── calculateTotal.js # دالة لحساب الإجمالي
+│   ├── App.jsx               # المكون الرئيسي للتطبيق
+│   ├── index.jsx             # نقطة الدخول لـ React (تقوم بتركيب التطبيق في DOM)
+│   └── vite-env.d.ts         # تعريفات TypeScript لـ Vite (يمكن حذفه إذا لم تستخدم TypeScript)
+│
+├── .gitignore                # ملف لتحديد الملفات والمجلدات التي يجب تجاهلها بواسطة Git
+├── index.html                # ملف HTML الرئيسي (يمكن نسخه إلى `public/`)
+├── package.json              # معلومات المشروع والتبعيات
+├── vite.config.js            # ملف تكوين Vite باستخدام JavaScript
+└── README.md                 # نظرة عامة على المشروع والتوثيق
+
+
+
+
+=============== Courses ===============
+
+                Add Course 
+Name: React js 
+Price :200$
+Hours :5 hour
+image: 
+Videos:
+VideoIntro:
+Instructure
+free or no
+discount if exists
+description:
+objectives:
+outcomes:
+
+                Get Course 
+                يعني هرجع الكورس بالحاجات اللي ضفتها فوق
+                وازود عليها بيانات المحاضر بتاع الكورس
+Course : {
+
+    Name
+    Price
+    Hours
+    free
+    ImgCover 
+    Videos[lec1  , lec2 , lec3  , , , , ,]
+    VideoIntro:
+    Instructure:{name ,.... All data}
+    description:
+}
+
+ 
+=============== Instructure ===============
+
+                Add Instructure 
+Name: Abdelrhman
+Email:abdo@gmail.com
+Password:0123
+Phone:01008034761
+LinkedIn:https://www:abdelrhmanali-18
+Image:
+bio:
+
+
+
+
+
+                Get Instructure 
+                يعني هرجع المحاضر بالكورسات اللي تبعه
+Instructures : {
+    Name: Abdelrhman
+    Email:abdo@gmail.com
+    Password:0123
+    Phone:01008034761
+    LinkedIn:https://www:abdelrhmanali-18
+    Image:
+    bio:
+    Courses:[
+        {
+        Name: React js 
+        Price :200$
+        Hours
+        ImgCover: 
+        Videos:
+        VideoIntro:
+        Instructure
+        description
+        free or no      
+        }
+
+           {
+        Name: Angular js 
+        Price :200$
+        Hours
+        ImgCover: 
+        Videos:
+        VideoIntro:
+        Instructure
+        description
+        free or no      
+        }
+    ]
+}
+
+
+
+
+
+=============== Statistics ===============
+ 
+ get all student [
+    All Student with Courses
+    All Student That مشتركه in Course 
+    All Student That not مشتركه in Course 
+ ]
+ get all Instructure  [
+    All Instructure with Courses
+    
+ ]
+ get all Courses
+ 

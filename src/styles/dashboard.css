@@ -1,0 +1,103 @@
+aside img {
+    width: 120px !important;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+aside li {
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+aside li:hover {
+    transition: all 0.3s ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+aside li a {
+    color: var(--main-color) !important;
+
+}
+
+aside li i {
+    color: var(--dark-main-color);
+}
+
+@media (max-width:767px) {
+    aside {
+        width: 60px !important;
+    }
+
+
+
+    aside ul li {
+        margin: 15px 0;
+
+
+    }
+}
+
+.top-navbar {
+    background-color: var(--dark-main-color) !important;
+}
+
+/* user-profile  */
+.user-profile .card,
+.instructor-profile .card {
+    color: var(--text-dark);
+    background-color: var(--background-section);
+}
+
+.user-profile button.BTN,
+.instructor-profile button.BTN,
+.add-course-form .BTN,
+.add-article-form .BTN {
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    background-color: var(--dark-main-color);
+
+
+}
+
+.user-profile button.BTN:hover,
+.instructor-profile button.BTN:hover,
+.add-course-form .BTN:hover,
+.add-articel-form .BTN:hover {
+    transition: all 0.3s ease;
+    background-color: var(--main-color);
+}
+
+
+.add-course-form label,
+.add-article-form label {
+    color: var(--text-dark);
+}
+
+.add-course-form input,
+.add-course-form textarea,
+.add-article-form input,
+.add-article-form textarea {
+    background-color: var(--background-section);
+}
+
+.add-course-form input::placeholder,
+.add-course-form textarea::placeholder,
+.add-article-form input::placeholder,
+.add-article-form textarea::placeholder {
+    color: var(--text-dark);
+}
+
+.add-course-form input:focus,
+.add-course-form textarea:focus,
+.add-article-form input:focus,
+.add-article-form textarea:focus {
+    background-color: var(--background-section);
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: var(--main-color);
+}

@@ -1,0 +1,190 @@
+/* Header */
+header.courses {
+    height: 50vh;
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)),
+        url('../assets/images/about/header.jpg') center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+header.courses ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header.courses ul li a.active {
+    color: var(--main-color);
+}
+
+/* Section */
+
+.courses-section {
+    padding: 100px 0;
+    position: relative;
+    background-color: var(--background-section);
+}
+
+.course-item {
+    color: var(--text-dark);
+    transition: all 0.5s ease;
+    background-color: var(--background-light);
+    box-shadow: 3px -4px 8px rgb(0 0 0 / 9%);
+
+}
+
+.course-item:hover {
+    margin-top: -10px;
+}
+
+.course-item h6 {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.course-item span {
+    background-color: var(--main-color);
+}
+
+.course-item span:hover {
+    background-color: var(--dark-main-color);
+    transition: all 0.3s ease;
+}
+
+.course-item button {
+    width: 100%;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: var(--main-color);
+    margin: 10px 0;
+    transition: all 0.3s ease;
+
+
+}
+
+.course-item button:hover {
+    transition: all 0.3s ease;
+    background-color: var(--dark-main-color);
+}
+
+.course-item i {
+    margin-right: 5px;
+}
+
+/* .courses .title {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: center;
+
+}
+
+@media (min-width:991px) {
+    .courses .title {
+        box-shadow: 3px -4px 8px rgb(0 0 0 / 9%);
+
+    }
+}
+
+
+
+.courses .logo-section {
+    right: 0;
+    transform: translateY(-100%) translateX(-30%);
+
+} */
+
+/* From Uiverse.io by gharsh11032000 */
+.animated-button {
+    margin: 15px auto 15px 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 20px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: var(--dark-main-color);
+    box-shadow: 0 0 0 2px var(--dark-main-color);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+    position: absolute;
+    width: 20px;
+    fill: var(--dark-main-color);
+    z-index: 9;
+    margin-left: 10px !important;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+    right: 12px;
+}
+
+.animated-button .arr-2 {
+    left: -25%;
+}
+
+.animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--dark-main-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+    right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+    left: 0;
+}
+
+.animated-button:hover .text {
+    transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+    fill: #212121;
+}
+
+.animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px var(--dark-main-color);
+}
+
+.animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}

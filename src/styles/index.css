@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+[data-theme='light'] {
+  --line-height: 1.9;
+  --text-dark: #12161c;
+  --text-light: #fff;
+
+  --background-light: #f5f5f5;
+  --background-dark: #242424;
+  --background-section: #FBFBFB;
+  --light-gradient: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9));
+
+
+
+  --main-color: #0a4a7b;
+  --dark-main-color: #0c75bc;
+
+  --secondary-color: #212ea0;
+  --gray: #888;
+  --shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+[data-theme='dark'] {
+  --line-height: 1.9;
+  --text-light: #12161c;
+  --text-dark: #fff;
+
+  /* --background-light: #242424; */
+  --background-light: #021526;
+  /* --background-light: #17153B; */
+
+  --background-dark: #f5f5f5;
+  /* --background-section: #35374B; */
+  /* --background-cection: #0000002e; */
+  --light-gradient: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+
+  --main-color: #0a4a7b;
+  --dark-main-color: #0c75bc;
+
+  --secondary-color: #212ea0;
+  --gray: #ccc;
+  --text-black: rgba(255, 255, 255, 0.87);
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+body {
+  background-color: var(--background-light);
+  font-family: 'Cairo', 'Poppins', 'Roboto', sans-serif;
+  line-height: var(--line-height);
+}
+
+.theme-btn {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+video {
+  border-radius: 10px;
+}
+
+/* .title-section {
+  color: var(--main-color);
+
+} */
+
+
+
+
+
+/* ----------------------------- Style Heading  ----------------------------- */
+
+.title-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--main-color) !important;
+  position: relative;
+  padding-bottom: 15px;
+  text-align: right;
+}
+
+.title-section h2:after,
+.title-section h2:before {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  content: "";
+}
+
+.title-section h2:after {
+  right: 0;
+  width: 45px;
+  background-color: var(--dark-main-color);
+}
+
+.title-section h2:before {
+  right: 45px;
+  width: 90px;
+  background-color: #ccc;
+}
+
+
+
+
+
+/* ---------- Btn Scroll ---------- */
+#btnScroll {
+  bottom: 40px;
+  right: 80px;
+  position: fixed;
+  transform: rotate(270deg);
+}
+
+.cssbuttons-io-button {
+  border: none;
+  display: flex;
+  height: 2.8em;
+  z-index: 999;
+  font-size: 17px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  padding-left: 1.2em;
+  border-radius: 10em;
+  align-items: center;
+  padding-right: 3.3em;
+  box-shadow: 0 0 1.6em rgba(27, 27, 27, 0.3), 0 0 1.6em hsla(240, 3%, 7%, 0.3);
+  background-image: linear-gradient(19deg, var(--main-color) 0%, var(--dark-main-color) 100%);
+}
+
+.cssbuttons-io-button .icon {
+  width: 2.2em;
+  height: 2.2em;
+  display: flex;
+  right: 0.3em;
+  background: #fff;
+  position: absolute;
+  align-items: center;
+  border-radius: 10em;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+}
+
+@media (max-width:991px) {
+  #btnScroll {
+    right: 0;
+  }
+}
+
+
+.whats-app {
+  bottom: 40px;
+  left: 10px;
+  position: fixed;
+  z-index: 9999999999;
+  transform: rotate(270deg);
+
+}
+
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #075e54;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+.spinner-grow {
+  animation: spinner-grow 2s linear infinite;
+}
+
+@keyframes spinner-grow {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.1);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
